@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         .title {
-    cursor: pointer;
-    user-select: none;
-    font-size: 20px;
-}
+            cursor: pointer;
+            user-select: none;
+            font-size: 20px;
+        }
 
-.dropdown {
-    list-style: none;
-    padding-left: 10px;
-    display: none; /* Ẩn mặc định */
-}
+        .dropdown {
+            list-style: none;
+            padding-left: 10px;
+            display: none;
+            /* Ẩn mặc định */
+        }
 
-.dropdown li {
-    padding: 5px 0;
-}
-
+        .dropdown li {
+            padding: 5px 0;
+        }
     </style>
 </head>
+
 <body>
     <h2 class="title">Danh sách sản phẩm ▼</h2>
 
-<ul class="dropdown">
-    <li>Sản phẩm 1</li>
-    <li>Sản phẩm 2</li>
-    <li>Sản phẩm 3</li>
-</ul>
-<script>
-    const title = document.querySelector('.title');
-const dropdown = document.querySelector('.dropdown');
+    <ul class="dropdown">
+        <li>Sản phẩm 1</li>
+        <li>Sản phẩm 2</li>
+        <li>Sản phẩm 3</li>
+        <div class="card_box">
+            <div><img src="./img/video-7.jpg" class="img_card"> </div>
+            <div class="info">
+                <a href="#" style="font-size: 20px;">Kiến thức nhập môn IT</a>
+                <div class="btoom">
+                    <p><i class="fa-regular fa-circle-play"></i>9</p>
+                    <p><i class="fa-regular fa-clock"></i>3h12p</p>
+                </div>
+            </div>
+        </div>
 
-title.addEventListener('click', () => {
-    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
-});
+    </ul>
+    <script>
+        const title = document.querySelector('.title');
+        const dropdown = document.querySelector('.dropdown');
 
-</script>
+        title.addEventListener('click', () => {
+            dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+        });
+
+    </script>
 </body>
+
 </html>
